@@ -1,3 +1,19 @@
 .nav-bar {
-  background-color: green;
+  background-color: white;
+  border-bottom: grey;
+}
+
+.navbar-links {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links-item {
+  margin: 0;
+  padding: 20px;
+  display: inline-block;
+}
+
+img {
+  width: 20%;
 }
