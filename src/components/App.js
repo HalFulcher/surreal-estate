@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import "../styles/App.css";
 import NavBar from "./NavBar";
 import Properties from "./Properties";
+import AddProperty from "./AddProperty";
 
 function App() {
   return (
@@ -11,7 +12,11 @@ function App() {
       <div className="App">
         <h2>Surreal Estate</h2>
         <NavBar />
-        <Switch path />
+
+        <Switch>
+          <Route exact path="/" component={Properties} />
+        </Switch>
+        <Route exact path="/add-property" component={AddProperty} />
       </div>
     </BrowserRouter>
   );
