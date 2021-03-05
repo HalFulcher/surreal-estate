@@ -1,11 +1,7 @@
 import React from "react";
 
 const Properties = () => {
-  return (
-    <div>
-      <p>Properties Page</p>
-    </div>
-  );
+  return <div>Properties Page</div>;
 };
 
 export default Properties;

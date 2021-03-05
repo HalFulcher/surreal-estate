@@ -1,23 +1,29 @@
-import React, { useEffect } from "react";
+import React from "react";
+import PropTypes from "prop-types";
 
-const PropertyCard = ({
-  title,
-  type,
-  bathrooms,
-  bedrooms,
-  price,
-  city,
-  email,
-}) => {
+const PropertyCard = (props) => {
+  const { title, type, bathrooms, bedrooms, price, city, email } = props;
   return (
-    <div className="propertyDetails">
-      <p>{title}</p>
-      <p>{type}</p>
-      <p>{bathrooms}</p>
-      <p>{bedrooms}</p>
-      <p>{price}</p>
-      <p>{city}</p>
-      <p>{email}</p>
+    <div className="property-card">
+      <div className="property-card-title">{title}</div>
+      <div className="property-card-type">{type}</div>
+      <div
+        className="property-card-bathrooms"
+        data-testid="property-card-bathrooms"
+      >
+        {bathrooms}
+      </div>
+      <div
+        className="property-card-bedrooms"
+        data-testid="property-card-bedrooms"
+      >
+        {bedrooms}
+      </div>
+      <div className="property-card-price" data-testid="property-card-price">
+        {price}
+      </div>
+      <div className="property-card-city">{city}</div>
+      <div className="property-card-email">{email}</div>
     </div>
   );
 };
