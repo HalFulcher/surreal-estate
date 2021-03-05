@@ -41,7 +41,11 @@ exports[`PropertyCard displays component 1`] = `
     <div
       class="property-card-email"
     >
-      test@gmail.com
+      <a
+        href="mailto:test@gmail.com"
+      >
+        test@gmail.com
+      </a>
     </div>
   </div>
 </DocumentFragment>
